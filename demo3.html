@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <title>Document</title>
+
+    <style>
+        .swiper-slide img{
+            width: 100%;
+            height: 100%;
+        }
+        .changestate{
+            background-color: #cdcdcd;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background: #1C9DAF">
+            <img src="image/03.jpg" alt="">
+        </div>
+        <div class="swiper-slide" style="background: mediumvioletred">
+            <img src="image/01.jpg" alt="">
+        </div>
+        <div class="swiper-slide" style="background: deeppink">
+            <img src="image/04.jpg" alt="">
+        </div>
+        <div class="swiper-slide" style="background: blueviolet">
+            <img src="image/02.jpg" alt="">
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <!--<div class="swiper-pagination"></div>-->
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!--&lt;!&ndash; 如果需要滚动条 &ndash;&gt;-->
+    <!--<div class="swiper-scrollbar"></div>-->
+
+
+</div>
+<div class="type">
+    <div class="project active">未完成</div>
+    <div class="done">已完成</div>
+</div>
+<div class="content">
+    <ul class="itemlist">
+        <li>
+            <p></p>
+            <time></time>
+            <span></span>
+            <div class="changestate"></div>
+        </li>
+    </ul>
+</div>
+<div class="add">新增</div>
+<div class="mask">
+    <div class="inputarea">
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <div class="submit">提交</div>
+        <div class="update">修改</div>
+        <div class="cancel">X</div>
+
+
+    </div>
+</div>
+
+<script src="js/swiper.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.transit.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

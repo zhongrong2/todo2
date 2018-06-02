@@ -1,0 +1,193 @@
+/*rem vw vh 100%*/
+/*swiper插件*/
+*{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 30vh;
+}
+.swiper-slide {
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.type{
+    width: 100%;
+    height: 10vh;
+}
+.project,.done{
+    width: 50%;
+    height: 10vh;
+    float: left;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #4d4d4d;
+}
+.project.active{
+   background-color: #0AA6E8;
+}
+.done.active{
+    background-color: #0AA6E8;
+}
+.content{
+    width: 100vw;
+    height: 50vh;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.content ul{
+    width: 100vw;
+    height: auto;
+}
+.itemlist li{
+    width: 100vw;
+    height: 6vh;
+    position: relative;
+    /*line-height: 6vh;*/
+    /*float: left;*/
+}
+.changestate{
+    width: 20vw;
+    height: 6vh;
+    background-color: #cdcdcd;
+    color: #fff;
+    text-align: center;
+    line-height: 6vh;
+    position: absolute;
+    top: 0;
+    right: -20vw;
+}
+.del{
+    width: 20vw;
+    height: 6vh;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 6vh;
+    position: absolute;
+    top: 0;
+    right: -20vw;
+}
+.itemlist li p{
+    width: 45vw;
+    height: 6vh;
+    /*background-color: red;*/
+    float: left;
+    line-height: 6vh;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 6vh;
+}
+.itemlist li time{
+    width: 30vw;
+    height: 6vh;
+    float: left;
+}
+.itemlist li span{
+    width: 10vw;
+    height: 6vh;
+    /*background-color: greenyellow;*/
+    float: left;
+    text-align: center;
+    color: #333;
+    line-height: 6vh;
+}
+.itemlist li span.active{
+    color: red;
+}
+.add{
+    width: 100vw;
+    height: 10vh;
+    background-color: #0AA6E8;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+.mask{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.67);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    display: none;
+}
+.inputarea{
+    width: 100vw;
+    height: 62vh;
+    transform: translateY(-62vh);
+}
+#text{
+    width: 100vw;
+    height: 40vh;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    display: block;
+}
+.submit{
+    width: 100vw;
+    height: 10vh;
+    background-color: #83c44e;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+}
+.cancel{
+    width: 6vw;
+    height: 6vh;
+    margin:3vh auto;
+    border:1px solid #fff;
+    text-align: center;
+    line-height: 6vh;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    display: block;
+}
+.update{
+    width: 100vw;
+    height: 10vh;
+    background-color: #83c44e;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+}
